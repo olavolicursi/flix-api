@@ -1,5 +1,6 @@
 from django.http import JsonResponse
 from genres.models import Genre
+from rest_framework import generics
 
 def genre_view(request):
     genres = Genre.objects.all()

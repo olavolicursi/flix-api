@@ -1,5 +1,5 @@
-from genres.models import Genre
 from rest_framework import generics
+from genres.models import Genre
 from genres.serializers import GenreSerializer
 
 

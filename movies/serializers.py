@@ -27,3 +27,9 @@ class MovieSerializer(serializers.ModelSerializer):
         if len(value) > 200:
             raise serializers.ValidationError('O resumo não pode ultrapassar 200 caracteres')
         return value
+    
+class MovieListDetailSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Movie
+        fields = '__all__'
